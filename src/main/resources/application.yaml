@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: AImailbox
+
+jwt:
+  secret: ${JWT_SIGNER_KEY}
+  access-expiration-minutes: ${JWT_ACCESS_TOKEN_EXPIRATION}
+  refresh-expiration-days: ${JWT_REFRESH_TOKEN_EXPIRATION}
+
+datasource:
+  url: jdbc:h2:mem:testdb
+  driverClassName: org.h2.Driver
+  username: sa
+  password:
+jpa:
+  hibernate:
+    ddl-auto: update
+  show-sql: false
+
