@@ -17,3 +17,8 @@ jpa:
     ddl-auto: update
   show-sql: false
 
+securityConfig:
+  origins:
+    allowed: ${ORIGINS_ALLOWED}
+
+
