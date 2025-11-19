@@ -3,9 +3,9 @@ spring:
     name: AImailbox
 
 jwt:
-  secret: ${JWT_SIGNER_KEY}
-  access-expiration-minutes: ${JWT_ACCESS_TOKEN_EXPIRATION}
-  refresh-expiration-days: ${JWT_REFRESH_TOKEN_EXPIRATION}
+  secret: nkjhuv3787v09nhfuehcn93784nvcjsd
+  access-expiration-minutes: 15
+  refresh-expiration-days: 7
 
 datasource:
   url: jdbc:h2:mem:testdb
@@ -19,6 +19,6 @@ jpa:
 
 securityConfig:
   origins:
-    allowed: ${ORIGINS_ALLOWED}
+    allowed: http://localhost:5173
 
 
